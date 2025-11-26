@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import Infographic from "@/components/Infographic";
 
 const Index = () => {
   const timelineEvents = [
@@ -74,28 +75,27 @@ const Index = () => {
 
         <section className="mb-20 animate-fade-in" style={{ animationDelay: '0.1s' }}>
           <Card className="p-8 border-2 overflow-hidden bg-gradient-to-br from-card to-muted/20">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Image" className="text-primary" size={32} />
-              <h2 className="font-cormorant text-4xl font-semibold text-primary">
-                Инфографика
-              </h2>
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <Icon name="Image" className="text-primary" size={32} />
+                <h2 className="font-cormorant text-4xl font-semibold text-primary">
+                  Инфографика на русском языке
+                </h2>
+              </div>
             </div>
-            <div className="relative w-full rounded-lg overflow-hidden shadow-2xl bg-white">
-              <img 
-                src="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/1ceaedac-f430-459d-84c1-bbcef1c059c8.jpg"
-                alt="Инфографика: Осип Мандельштам"
-                className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="mt-6 text-center">
-              <a 
-                href="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/1ceaedac-f430-459d-84c1-bbcef1c059c8.jpg"
-                download="osip-mandelstam-infografika.jpg"
-                className="inline-flex items-center gap-2 font-spectral text-primary hover:text-accent transition-colors text-lg font-medium"
-              >
-                <Icon name="Download" size={20} />
-                Скачать инфографику
-              </a>
+            <Infographic />
+            <div className="mt-8 text-center">
+              <p className="font-spectral text-muted-foreground mb-4">
+                Сделайте скриншот инфографики выше, чтобы сохранить изображение с идеально читаемым русским текстом
+              </p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                <div className="font-spectral text-sm text-muted-foreground bg-muted/50 px-4 py-2 rounded">
+                  💡 Windows: Win + Shift + S
+                </div>
+                <div className="font-spectral text-sm text-muted-foreground bg-muted/50 px-4 py-2 rounded">
+                  💡 Mac: Cmd + Shift + 4
+                </div>
+              </div>
             </div>
           </Card>
         </section>
