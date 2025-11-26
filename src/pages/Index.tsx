@@ -82,15 +82,15 @@ const Index = () => {
             </div>
             <div className="relative w-full rounded-lg overflow-hidden shadow-2xl bg-white">
               <img 
-                src="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/528431fe-275d-45d7-ac58-408a7889089a.jpg"
-                alt="Инфографика: Жизнь и творчество Осипа Мандельштама"
+                src="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/1ceaedac-f430-459d-84c1-bbcef1c059c8.jpg"
+                alt="Инфографика: Осип Мандельштам"
                 className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="mt-6 text-center">
               <a 
-                href="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/528431fe-275d-45d7-ac58-408a7889089a.jpg"
-                download="mandelstam-infographic-ru.jpg"
+                href="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/1ceaedac-f430-459d-84c1-bbcef1c059c8.jpg"
+                download="osip-mandelstam-infografika.jpg"
                 className="inline-flex items-center gap-2 font-spectral text-primary hover:text-accent transition-colors text-lg font-medium"
               >
                 <Icon name="Download" size={20} />
