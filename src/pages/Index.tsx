@@ -72,6 +72,34 @@ const Index = () => {
           </p>
         </header>
 
+        <section className="mb-20 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+          <Card className="p-8 border-2 overflow-hidden bg-gradient-to-br from-card to-muted/20">
+            <div className="flex items-center gap-3 mb-6">
+              <Icon name="Image" className="text-primary" size={32} />
+              <h2 className="font-cormorant text-4xl font-semibold text-primary">
+                Инфографика
+              </h2>
+            </div>
+            <div className="relative w-full rounded-lg overflow-hidden shadow-2xl bg-white">
+              <img 
+                src="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/72e4573c-12c9-437a-9c80-17c1d9b155de.jpg"
+                alt="Инфографика: Жизнь и творчество Осипа Мандельштама"
+                className="w-full h-auto object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <a 
+                href="https://cdn.poehali.dev/projects/5efee7ab-a856-4d18-a21b-9d2880e54dde/files/72e4573c-12c9-437a-9c80-17c1d9b155de.jpg"
+                download="mandelstam-infographic.jpg"
+                className="inline-flex items-center gap-2 font-spectral text-primary hover:text-accent transition-colors text-lg font-medium"
+              >
+                <Icon name="Download" size={20} />
+                Скачать инфографику
+              </a>
+            </div>
+          </Card>
+        </section>
+
         <section className="mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="flex items-center gap-3 mb-8">
             <Icon name="Clock" className="text-primary" size={32} />
